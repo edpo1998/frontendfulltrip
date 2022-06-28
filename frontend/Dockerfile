@@ -3,7 +3,7 @@ FROM node:16-alpine AS node
 WORKDIR /app
 COPY . .
 RUN yarn install
-ENV VITE_BACKEND_ADDR https://backendpark-pkwttxurqa-uc.a.run.app/
+ENV VITE_BACKEND_ADDR http://grupo15-api.tk:8000/
 RUN yarn build
 
 ### STAGE 2: Run ###
