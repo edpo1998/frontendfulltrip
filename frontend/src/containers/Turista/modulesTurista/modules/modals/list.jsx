@@ -536,7 +536,7 @@ const List = ({
                             ) : (
                               <>
                                 <td>
-                                  {Moment(element.fecha).format("YYYY-MM-DD")}
+                                  {Moment(registro.fecha).format("YYYY-MM-DD")}
                                 </td>
                                 <td>{registro.destino}</td>
                                 <td>{registro.cantAsientos}</td>
