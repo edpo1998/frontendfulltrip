@@ -520,9 +520,7 @@ const List = ({
                             {tipo === 2 ? (
                               <>
                                 <td>
-                                  {moment(registro.fec_disponibilidad).format(
-                                    "DD/MM/YYYY"
-                                  )}
+                                {"11/08/1998"}
                                 </td>
                                 <td>{registro.cantidadHabitaciones}</td>
                                 <td>{registro.precio}</td>
@@ -538,7 +536,7 @@ const List = ({
                             ) : (
                               <>
                                 <td>
-                                  {moment(registro.fecha).format("DD/MM/YYYY")}
+                                {"11/08/1998"}
                                 </td>
                                 <td>{registro.destino}</td>
                                 <td>{registro.cantAsientos}</td>
