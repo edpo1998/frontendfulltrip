@@ -20,7 +20,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import * as moment from "moment";
+import Moment from "moment";
 import RangeSlider from "react-bootstrap-range-slider";
 import Date from "../../../../../utils/date";
 
@@ -156,7 +156,7 @@ const List = ({
             element.precio <= precioMax &&
             (buscar.fecha === ""
               ? true
-              : moment(element.fecha).format("YYYY-MM-DD") == buscar.fecha)
+              : Moment(element.fecha).format("YYYY-MM-DD") == buscar.fecha)
         );
       }
       setDataCopia(dataE);
@@ -520,7 +520,7 @@ const List = ({
                             {tipo === 2 ? (
                               <>
                                 <td>
-                                {"11/08/1998"}
+                                  {Moment(registro.fec_disponibilidad).format("DD/MM/YYYY")}
                                 </td>
                                 <td>{registro.cantidadHabitaciones}</td>
                                 <td>{registro.precio}</td>
@@ -536,7 +536,7 @@ const List = ({
                             ) : (
                               <>
                                 <td>
-                                {"11/08/1998"}
+                                  {Moment(element.fecha).format("YYYY-MM-DD")}
                                 </td>
                                 <td>{registro.destino}</td>
                                 <td>{registro.cantAsientos}</td>
