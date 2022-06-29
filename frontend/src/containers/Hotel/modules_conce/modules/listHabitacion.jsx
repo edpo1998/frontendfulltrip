@@ -1,7 +1,7 @@
 import { Table, Button } from "reactstrap";
 import { useEffect, useState } from "react";
 import FetchData from "./api/Api";
-import * as moment from 'moment'
+import Moment from 'moment'
 
 const ListUsuario = ({ id }) => {
   const [data, setData] = useState([]);
@@ -70,7 +70,7 @@ const ListUsuario = ({ id }) => {
                     <tbody style = {{backgroundColor : registro.estado === 2 ? "#F44336": ""}}>
                     <tr >
                       <th scope="row">{index + 1}</th>
-                      <td>{moment(registro.fec_disponibilidad).format('DD/MM/YYYY')}</td>
+                      <td>{Moment(registro.fec_disponibilidad).format('DD/MM/YYYY')}</td>
                       <td>{registro.cantidadHabitaciones}</td>
                       <td>{registro.precio}</td>
                       <td>{registro.capacidad}</td>

@@ -1,7 +1,7 @@
 import { Table, Button } from "reactstrap";
 import { useEffect, useState } from "react";
 import FetchData from "./api/Api";
-import * as moment from 'moment'
+import Moment from 'moment'
 
 
 const ListUsuario = ({ id }) => {
@@ -68,7 +68,7 @@ const ListUsuario = ({ id }) => {
                   {data.map((registro, index) => (
                     <tr >
                       <th scope="row">{index + 1}</th>
-                      <td>{moment(registro.fecha).format('DD/MM/YYYY')}</td>
+                      <td>{Moment(registro.fecha).format('DD/MM/YYYY')}</td>
                       <td>{registro.destino}</td>
                       <td>{registro.cantAsientos}</td>
                       <td>{registro.precio}</td>

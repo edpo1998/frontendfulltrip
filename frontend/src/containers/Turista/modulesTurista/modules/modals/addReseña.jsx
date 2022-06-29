@@ -20,7 +20,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import * as moment from "moment";
+import Moment from "moment";
 import RangeSlider from "react-bootstrap-range-slider";
 import Date from "../../../../../utils/date";
 
